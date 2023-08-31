@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+
+
+            <a href="#" class="logo">RINCON STORE</a>
+            
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imgs/menu.png" class="menu-icon" alt="">
+            </label>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="login.html">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="acerca.html">Acerca de</li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imgs/car.png" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="bt-2">Vaciar el carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Productos</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Reprehenderit magnam 
+                    quam nobis provident assumenda, 
+                    quo sequi veniam atque est voluptate doloribus eius ullam! 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Facere asperiores eum, blanditiis, fugiat rem ad qui error 
+                    fuga voluptas repudiandae consequatur amet et laboriosam 
+                    laudantium dolorum provident
+                </p>
+            </div>
+        </div>
+        
+
+
+    </header>
+
+    <div class="filtro-content">
+
+        <div class="filter">
+            <a href="#cpu"> <h3>Procesadores</h3> <hr></a>
+        </div>
+        <div class="filter">
+            <a href="#video"><h3>Tarjetas de video</h3> <hr></a>   
+        </div>
+        <div class="filter">
+            <a href="#dis"><h3>Disipadores</h3> <hr></a>
+        </div>
+        <div class="filter">
+            <a href="#ram"><h3>RAM</h3> <hr></a>
+        </div>
+        <div class="filter">
+            <a href="#ssd"><h3>Almacenamiento</h3> <hr></a>
+        </div>
+        <div class="filter">
+            <a href="#energia"><h3>Fuentes</h3> <hr></a>
+        </div>
+        <div class="filter">
+            <a href="#caja"><h3>Chasis</h3> <hr></a>
+            
+        </div>
+        <div class="filter">
+            <a href="#m"><h3>Monitores</h3> <hr></a>
+           
+        </div>
+        <div class="filter">
+            <a href="#peri"><h3>Perifericos</h3> <hr></a>
+            
+        </div>
+    
+    </div>
+
+    
+
+    <section class="products container" id="lista-1">
+
+        
+
+        <h2>Motherboard</h2>
+
+        <div class="products-content">
+            
+            <div class="product">
+                <img src="imgs/asus-1.png" alt="">
+                <div class="product-txt">
+                    <h3>Motherboard Asus</h3>
+                    <p>Prime B450M- AII</p>
+                    <P class="precio">$ 90</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/asus-2.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard Asus</h3>
+                    <p>Rog strix X570-E GAMING </p>
+                    <P class="precio">$ 464</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/Gb-1.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard Gigabyte</h3>
+                    <p>X570 AORUS ELITE</p>
+                    <P class="precio">$ 306</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/Gb-2.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard Gigabyte</h3>
+                    <p>UD B450M-DS3H V2</p>
+                    <P class="precio">$ 91</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/msi-1.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard MSI</h3>
+                    <p>GAMING PLUS MAX B450M</p>
+                    <P class="precio">$ 224</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/msi-2.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard MSI</h3>
+                    <p>MAG X570S TOMAHAWK MAX WIFI</p>
+                    <P class="precio">$ 390</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/asus-3.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard Asus</h3>
+                    <p>ROG STRIX Z690-G GAMING WIFI</p>
+                    <P class="precio">$ 612</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/asus-4.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard Asus</h3>
+                    <p>PRIMER H610M-K D4</p>
+                    <P class="precio">$ 115</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/Gb-3.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard Gigabyte</h3>
+                    <p>B760 GAMING X DDR4</p>
+                    <P class="precio">$ 367</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="9"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/Gb-4.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard Gigabyte</h3>
+                    <p> B760M D2H DDR4</p>
+                    <P class="precio">$ 270</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="10"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/msi-3.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard MSI</h3>
+                    <p>MAG B660 TOMAHAWK WIFI DDR4</p>
+                    <P class="precio">$ 220</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="11"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/msi-4.png" alt="">
+                <div class="product-txt">
+                    <h3> Motherboard MSI</h3>
+                    <p>B460M PRO</p>
+                    <P class="precio">$ 310</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="12"> Agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="products container" id="lista-2">
+
+        <h2 id="cpu">CPUs</h2>
+
+        <div class="products-content">
+
+            
+
+            <div class="product">
+                <img src="imgs/r3.png" alt="">
+                <div class="product-txt">
+                    <h3>AMD Ryzen</h3>
+                    <p>3 3200G</p>
+                    <P class="precio">$ 84</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="13"> Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="product">
+                <img src="imgs/r5.png" alt="">
+                <div class="product-txt">
+                    <h3>AMD Ryzen</h3>
+                    <p>5 5600G</p>
+                    <P class="precio">$ 130</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="14"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/r7.png" alt="">
+                <div class="product-txt">
+                    <h3>AMD Ryzen</h3>
+                    <p>7 5700x</p>
+                    <P class="precio">$ 220</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="15"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/r9.png" alt="">
+                <div class="product-txt">
+                    <h3>AMD Ryzen</h3>
+                    <p>9 5900X</p>
+                    <P class="precio">$ 416</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="16"> Agregar al carrito</a>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="imgs/i3.png" alt="">
+                <div class="product-txt">
+                    <h3>Intel Core</h3>
+                    <p>i3 12100</p>
+                    <P class="precio">$ 170</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="17"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/i5.png" alt="">
+                <div class="product-txt">
+                    <h3>Intel Core</h3>
+                    <p>i5 13400</p>
+                    <P class="precio">$ 290</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="18"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/i7.png" alt="">
+                <div class="product-txt">
+                    <h3>Intel Core</h3>
+                    <p>i7 12700K</p>
+                    <P class="precio">$ 480</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="19"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/i9.png" alt="">
+                <div class="product-txt">
+                    <h3>Intel Core</h3>
+                    <p>i9 12900K</p>
+                    <P class="precio">$ 679</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="20"> Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="products container" id="lista-3">
+
+        <h2 id="video">Tarjetas de video</h2>
+
+        <div class="products-content">
+
+            <div class="product">
+                <img src="imgs/v1.png" alt="">
+                <div class="product-txt">
+                    <h3> MSI </h3>
+                    <p>GEFORCE GTX-1630 4GB DDR6 OC VENTUS 2X</p>
+                    <P class="precio">$ 190</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="21"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/v2.png" alt="">
+                <div class="product-txt">
+                    <h3> ASROCK </h3>
+                    <p> AMD RADEON RX 6500 XT PHANTOM GAMING 4GB GDDR6 OC</p>
+                    <P class="precio">$ 210</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="22"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/v3.png" alt="">
+                <div class="product-txt">
+                    <h3> ASROCK </h3>
+                    <p>AMD RADEON RX 7600 CHALLENGER OC 8GB</p>
+                    <P class="precio">$ 395</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="23"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/v4.png" alt="">
+                <div class="product-txt">
+                    <h3> ASUS </h3>
+                    <p> GEFORCE RTX 4060 OC 8G DUAL</p>
+                    <P class="precio">$ 149</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="24"> Agregar al carrito</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="products container" id="lista-4">
+
+        <h2 id="dis">Disipadores</h2>
+
+        <div class="products-content">
+
+            <div class="product">
+                <img src="imgs/d1.png" alt="">
+                <div class="product-txt">
+                    <h3>Disipador COOLER MASTER</h3>
+                    <p>HYPER T20</p>
+                    <P class="precio">$ 19</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="25"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/d2.png" alt="">
+                <div class="product-txt">
+                    <h3>Disipador THERMALTAKE </h3>
+                    <p>UX200 SE ARGB</p>
+                    <P class="precio">$ 30</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="26"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/d3.png" alt="">
+                <div class="product-txt">
+                    <h3>Disipador COUGAR</h3>
+                    <p>FORZA 85</p>
+                    <P class="precio">$ 73</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="27"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/d4.png" alt="">
+                <div class="product-txt">
+                    <h3>Refrigeracion  AEROCOOL</h3>
+                    <p>MIRAGE L240 ARGB BLANCO</p>
+                    <P class="precio">$ 110</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="28"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/d5.png" alt="">
+                <div class="product-txt">
+                    <h3>Refrigeracion ASUS</h3>
+                    <p>TUF GAMING LC240 ARGB</p>
+                    <P class="precio">$ 150</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="29"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/d6.png" alt="">
+                <div class="product-txt">
+                    <h3>Refrigeracion GIGABYTE</h3>
+                    <p>AORUS WATERFORCE X 360</p>
+                    <P class="precio">$ 310</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="30"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/d7.png" alt="">
+                <div class="product-txt">
+                    <h3>KIT X3 Ventiladores</h3>
+                    <p>WATTANA CARIUS WA-VE300</p>
+                    <P class="precio">$ 23</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="31"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/d8.png" alt="">
+                <div class="product-txt">
+                    <h3>PASTA REFRIGERANTE </h3>
+                    <p>ARCTIC MX4 (8gm) + ESPATULA</p>
+                    <P class="precio">$ 16</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="32"> Agregar al carrito</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="products container" id="lista-5">
+
+        <h2 id="ram">Memorias RAM</h2>
+
+        <div class="products-content">
+
+            <div class="product">
+                <img src="imgs/m1.png" alt="">
+                <div class="product-txt">
+                    <h3>RAM CORSAIR </h3>
+                    <p>VENGEANCE LPX 8X2</p>
+                    <P class="precio">$ 48</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="33"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/m2.png" alt="">
+                <div class="product-txt">
+                    <h3>RAM KINGSTON </h3>
+                    <p>FURY BEAST 8X2</p>
+                    <P class="precio">$ 53</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="34"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/m3.png" alt="">
+                <div class="product-txt">
+                    <h3>RAM XPG DDR5 </h3>
+                    <p>ADATA LANCER 8X2</p>
+                    <P class="precio">$ 90</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="35"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/m4.png" alt="">
+                <div class="product-txt">
+                    <h3>RAM GSKILL</h3>
+                    <p> TRIDENT-Z RGB 16X2</p>
+                    <P class="precio">$ 130</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="36"> Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="products container" id="lista-6">
+
+        <h2 id="ssd">Almacenamiento</h2>
+
+        <div class="products-content">
+
+            <div class="product">
+                <img src="imgs/a1.png" alt="">
+                <div class="product-txt">
+                    <h3>NVMe CORSAIR </h3>
+                    <p>MP600 PRO 1TB</p>
+                    <P class="precio">$118</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="37"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/a2.png" alt="">
+                <div class="product-txt">
+                    <h3>SSD CRUCIAL </h3>
+                    <p>BX 500 1TB</p>
+                    <P class="precio">$ 68</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="38"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/a3.png" alt="">
+                <div class="product-txt">
+                    <h3>NVMe PATRIOT</h3>
+                    <p>VIPER VR400 512GB</p>
+                    <P class="precio">$ 62</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="39"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/a4.png" alt="">
+                <div class="product-txt">
+                    <h3>SSD KINGSTON</h3>
+                    <p>A400 480GB</p>
+                    <P class="precio">$ 33</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="40"> Agregar al carrito</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="products container" id="lista-7">
+
+        <h2 id="energia">Fuentes</h2>
+
+        <div class="products-content">
+
+            <div class="product">
+                <img src="imgs/f1.png" alt="">
+                <div class="product-txt">
+                    <h3> GIGABYTE </h3>
+                    <p>P650B 650W 80 P BRONZE  </p>
+                    <P class="precio">$ 73</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="41"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/f2.png" alt="">
+                <div class="product-txt">
+                    <h3> COUGAR  </h3>
+                    <p>VTC 600W WHITE</p>
+                    <P class="precio">$ 68</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="42"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/f3.png" alt="">
+                <div class="product-txt">
+                    <h3> XPG</h3>
+                    <p>PYLON 750W 80P BRONZE</p>
+                    <P class="precio">$ 80</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="43"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/f4.png" alt="">
+                <div class="product-txt">
+                    <h3> COOLER MASTER</h3>
+                    <p>850W GOLD SFX MINI FULL MOD.</p>
+                    <P class="precio">$ 149</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="44"> Agregar al carrito</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="products container" id="lista-8">
+
+        <h2 id="caja">Cajas/Chasis</h2>
+
+        <div class="products-content">
+
+            <div class="product">
+                <img src="imgs/c1.png" alt="">
+                <div class="product-txt">
+                    <h3> XPG </h3>
+                    <p>VALOR MESH V.T. +4FAN NO-LED NEGRA </p>
+                    <P class="precio">$ 62</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="45"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/c2.png" alt="">
+                <div class="product-txt">
+                    <h3>COOLER MASTER  </h3>
+                    <p>TD300 MESH VT+2 ARGB BLANCA</p>
+                    <P class="precio">$ 100</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="46"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/c3.png" alt="">
+                <div class="product-txt">
+                    <h3>CORSAIR</h3>
+                    <p>5000D AIRFLOW VID. TEMP. 2FAN NEGRA</p>
+                    <P class="precio">$ 196</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="47"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/c4.png" alt="">
+                <div class="product-txt">
+                    <h3>ICEBERG </h3>
+                    <p>TITAN M16 V.T. + 4ARGB BLANCA</p>
+                    <P class="precio">$ 146</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="48"> Agregar al carrito</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="products container" id="lista-9">
+
+        <h2 id="m">Monitores</h2>
+
+        <div class="products-content">
+
+            <div class="product">
+                <img src="imgs/mo1.png" alt="">
+                <div class="product-txt">
+                    <h3> SAMSUNG  </h3>
+                    <p>LED 22" IPS (75Hz) F22T350FHL </p>
+                    <P class="precio">$ 112</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="49"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/mo2.png" alt="">
+                <div class="product-txt">
+                    <h3>ASUS  </h3>
+                    <p>LED 24" TUF GAMING (1m-165H)  </p>
+                    <P class="precio">$ 224</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="50"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/mo3.png" alt="">
+                <div class="product-txt">
+                    <h3>LG</h3>
+                    <p>LED 19" (HDMI) 20MK400H-B</p>
+                    <P class="precio">$ 88</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="51"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/mo4.png" alt="">
+                <div class="product-txt">
+                    <h3>GIGABYTE </h3>
+                    <p>LED 27" GAMING (1m-165H) CVO </p>
+                    <P class="precio">$ 272</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="52"> Agregar al carrito</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="products container" id="lista-10">
+
+        <h2 id="peri">Perifericos</h2>
+
+        <div class="products-content">
+
+            <div class="product">
+                <img src="imgs/p1.png" alt="">
+                <div class="product-txt">
+                    <h3> REDRAGON  </h3>
+                    <p>COMBO GAMER 2 en 1 S101-3 (TECLADO-MOUSE) RGB</p>
+                    <P class="precio">$ 22</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="53"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/p2.png" alt="">
+                <div class="product-txt">
+                    <h3>LOGITECH </h3>
+                    <p>COMBO TECLADO + MOUSE MK235 INALAMBRICO</p>
+                    <P class="precio">$ 22</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="54"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/p3.png" alt="">
+                <div class="product-txt">
+                    <h3> REDRAGON </h3>
+                    <p>COMBO GAMER 4en1 S101-BA-2 (TC-MS-DD-PD)</p>
+                    <P class="precio">$ 65</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="55"> Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="imgs/p4.png" alt="">
+                <div class="product-txt">
+                    <h3>CORSAIR </h3>
+                    <p>COMBO GAMER 2 en 1 TEC K55+MS KATAR PRO RGB</p>
+                    <P class="precio">$ 65</P>
+                    <a href="#" class="agregar-carrito btn-2" data-id="56"> Agregar al carrito</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <script src="products.js"></script>
+
+    <div>
+        <br><br><br><br>
+    </div>
+
+   
+    
+</body>
+</html>

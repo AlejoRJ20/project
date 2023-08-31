@@ -1,0 +1,298 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    font-family: cursive;
+    background-color: #01010c;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: linear-gradient( 
+        rgba(0,0,0,5),
+        rgba(0,0,0,0.2)),
+        url(imgs/logo-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+}
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.logo {
+    font-family: fantasy;
+    color: #18c9ff;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ea1050;   
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icon {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative; 
+}
+
+
+.submenu #carrito {
+    display: none;  
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #171728;
+    padding: 20px;
+    min-width: 400px;
+}
+
+#img-carrito {
+    width: 60px;
+}
+
+table {
+    width: 100%;
+    
+}
+
+th, td {
+    color: #ffffff;
+    
+}
+
+.borrar {
+    background-color: #000000;
+    border-radius: 7px;
+    padding: 5px 10px;
+    color: #ea1050;
+    font-weight: 800;
+     
+}
+
+.header-txt {
+    padding: 0 200px;
+    text-align: center;
+    
+}
+
+.header-txt h1 {
+    font-size: 50px;
+    line-height: 80px;
+    color: #ffffff;
+    
+}
+
+.header-txt p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.filtro-content {
+    font-size: 13px;
+    padding: 15px;
+    display: flex;
+    background-color: #070707;
+    border: 1px solid rgb(55, 0, 255);
+}
+
+.filtro-content h3 {
+    color: #ffffff;
+}
+
+.filter{
+    width: 150px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    margin: 5px;
+    color: #ffffff;
+}
+
+.filter :hover{
+    color: #18c9ff; 
+}
+
+.products {
+    padding: 70px 0 0 0 ;
+    text-align: center;
+    
+}
+
+h2 {
+    margin: auto;
+    margin-bottom: 75px;
+    width: 400px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #ea1050; 
+    box-shadow: 0 0 20px #ffffff;
+}
+
+.products-content {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+} 
+
+.product img {
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #414141;
+    transition: 0.7s;
+}
+
+.product img:hover {
+    transform: scale(1.2);
+}
+
+.product h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.product p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: #ea1050;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 17px;
+    border: 1px solid #3257A6;
+    border-radius: 10px;
+}
+
+.btn-2:hover{
+    background-color: #18c9ff;
+}
+
+@media(max-width:991px) {
+
+    .menu{
+        padding: 20px;
+        
+    }
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.9)
+        );
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .submenu:hover #carrito {
+        min-width: 100%;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-txt {
+        padding: 0;
+    }
+
+    .products {
+        padding: 30px;
+    }
+
+    .products-content {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}

@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body { 
+    font-family: cursive;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background: linear-gradient( 
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(imgs/logo-3.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 120vh;
+    padding: 80px 0 0 0;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: fantasy;
+    color: #18c9ff;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display:block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #ea1050;   
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: right;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-contact {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    );
+    position: relative;
+    width: 350px;
+    height: 530px;
+    box-shadow: 0 0 30px #ffffff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+h2 {
+    font-size:2em;
+    color: #18c9ff;
+    text-align: center;
+    margin: 30px 0;
+}
+
+label{
+    font-weight: 600;
+    color: #ffffff; 
+    text-align: center;
+    font-size: 15px;
+}
+
+
+input {
+    text-align: center;
+    width: 300px;
+    margin: 10px 0;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ea1050;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    );
+    color: #ffffff;
+}
+
+textarea{
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    );
+    color: #ffffff;
+}
+
+button {
+    font-family: cursive;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    width: 120px;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    );
+    border-radius: 15px;
+}
+
+button:hover {
+    transform: scale(.9);
+    color:#18c9ff;
+}
+
+@media(max-width:991px) {
+
+    .menu{
+        padding: 20px;
+        
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.9)
+        );
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+
+}

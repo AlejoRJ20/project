@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Store</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="menu container">
+
+            <a href="#" class="logo">RINCON STORE</a>
+            
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imgs/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>  
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-contact">
+            
+            <form action="login.html" >
+
+                <h2>¡Contactanos!</h2>
+                
+                <label for="username">Nombre</label>
+                <input type="text" name="username" id="username" required><br>
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" required>
+                <label for="telefono">Telefono</label>
+                <input type="text" name="telefono" id="telefono" required>
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="7" required></textarea>
+                <button type= "submit" value="Login">Enviar</button>
+            </form>  
+        </div>
+
+    </header>
+    
+</body>
+</html>
